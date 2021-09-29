@@ -8,8 +8,6 @@ name: Mark stale issues and pull requests
 on:
   schedule:
     - cron: '37 22 * * *'
-  push:
-
 
 jobs:
   stale:
@@ -31,5 +29,5 @@ jobs:
           days-before-close: -1
           days-before-issue-close: 30
           close-issue-message: 'This issue has been closed due to inactivity. Feel free to comment or reopen if this is still relevant.'
-          debug-only: true
+          #debug-only: true
           remove-stale-when-updated: true
